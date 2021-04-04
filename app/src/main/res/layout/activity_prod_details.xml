@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#EDEDED">
+
+    <TextView
+        android:id="@+id/tvProduName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="Product Name"
+        android:textColor="#E41C1C"
+        android:textSize="26sp"
+        android:textStyle="bold"
+       />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/DPImage"
+            android:layout_width="414dp"
+            android:layout_height="294dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            android:src="@color/purple_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPDName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvPDPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DPImage"
+            tools:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvPDPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:padding="4dp"
+            android:text="100$"
+            android:textColor="#F44336"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvPDName" />
+
+        <TextView
+            android:id="@+id/tvPDDiscription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="4dp"
+            android:text="Discription"
+            android:textColor="#676767"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvPDPrice"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvPDName"
+            app:layout_constraintTop_toBottomOf="@+id/tvPDName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
